@@ -1,0 +1,56 @@
+<div id="cookie-notice" class="bg-med-p text-black text-sm z-10 px-3 py-6 text-center">
+    <span class="editable">We use cookies to provide you with a great experience and to help our website run effectively.</span>
+    
+    <a href="/privacy-policy.html" class="opacity-5 uppercase">More info</a>
+    <a id="cookie-notice-accept" class="uppercase">Approve</a>
+    <!-- Optional close button that declines the cookies -->
+    <span id="close-cookie-banner"> X </span>
+</div>
+
+<!-- GOOGLE ANALYTICS SCRIPT -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-7JCE01WT55"></script>
+<script>
+    function createCookie(name,value,days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days*24*60*60*1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + value + expires + "; path=/";
+    }
+    function readCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+    }
+    function eraseCookie(name) {
+        createCookie(name,"",-1);
+    }
+    if(readCookie('cookie-notice-dismissed')=='true') {
+        // Add tracking scripts here 
+        // GOOGLE ANALYTICS
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7JCE01WT55');
+        // End tracking scripts 
+    } else {
+        document.getElementById('cookie-notice').style.display = 'block';
+    }
+    document.getElementById('cookie-notice-accept').addEventListener("click",function() {
+        createCookie('cookie-notice-dismissed','true',31);
+        document.getElementById('cookie-notice').style.display = 'none';
+        location.reload();
+    });
+    document.querySelector("#close-cookie-banner").addEventListener("click", (e) => {
+        
+        document.querySelector("#cookie-notice").style.display = 'none';
+    });
+</script> -->

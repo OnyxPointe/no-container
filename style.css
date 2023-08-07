@@ -10,3 +10,38 @@
     } 
 }
 */
+
+/* --------------------DEFAULT RESPONSIVE STYLES */
+.hide{display:none;}
+.sm-show{display: none;}
+.sm-hide{display: inline-grid;}
+
+/* --------------------SM Media Query (640px-767px) */
+@media (min-width: 640px) and (max-width: 767px) {
+
+}
+
+/* --------------------MD Media Query (768px-1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+/* --------------------LG Media Query (10240px-1279px) */
+@media (min-width: 1024px) and (max-width: 1279px) { 
+
+}
+
+/* --------------------XL Media Query (1280px-1535px) */
+@media (min-width: 1280px) and (max-width: 1535px) { 
+
+}
+
+/* --------------------2XL Media Query (1536px +) */
+@media (min-width: 1536px) { 
+
+}
+
+
+
+
+
